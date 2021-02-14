@@ -1,8 +1,8 @@
 let modInfo = {
-	name: "The ??? Tree",
-	id: "mymod",
-	author: "nobody",
-	pointsName: "points",
+	name: "The Tree Tree",
+	id: "IRXOSMMOD1",
+	author: "IRXOSM",
+	pointsName: "Points",
 	discordName: "",
 	discordLink: "",
 	initialStartPoints: new Decimal (10), // Used for hard resets and new players
@@ -42,6 +42,7 @@ function getPointGen() {
 		return new Decimal(0)
 
 	let gain = new Decimal(1)
+	if(hasUpgrade("p", 11))gain=gain.add(4)
 	return gain
 }
 
