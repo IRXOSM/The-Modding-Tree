@@ -19,27 +19,27 @@ addLayer("P", {
         rows: 2,
         cols: 3,
         11: {
-            description: "Increases point gain",
+            description: "Increases point gain | +4",
             cost: new Decimal(10),
         },
         12: {
-            description: "Doubles point gain",
+            description: "Doubles point gain | x2",
             cost: new Decimal(35),
         },
         13: {
-            description: "Even more points, who doesn't like that !?",
+            description: "Even more points, who doesn't like that !? | ^1.2",
             cost: new Decimal(100),
         },
         21: {
-            description: "While I give you upgrades, lets chat a bit. Don't you find the scaling too annoying?",
+            description: "While I give you upgrades, lets chat a bit. Don't you find the scaling too annoying? | +10",
             cost: new Decimal(150),
         },
         22: {
-            description: "Well now lets skyrocket points!",
+            description: "Well now lets skyrocket points! | ^2",
             cost: new Decimal(250),
         },
         23: {
-            description: "Now you can finnaly get past the scaling, nice?",
+            description: "Now you can finnaly get past the scaling, nice? | x25",
             cost: new Decimal(500),
         },
         
@@ -75,7 +75,7 @@ addLayer("2P", {
         rows: 5,
         cols: 8,
         11: {
-            description: "Welcome to Prestige Prestige, or PP. Even more points because why not",
+            description: "Welcome to Prestige Prestige, or PP. Even more points because why not | +985",
             cost: new Decimal(1),
         },
         
