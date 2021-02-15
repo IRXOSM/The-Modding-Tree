@@ -34,6 +34,14 @@ addLayer("p", {
             description: "While I give you upgrades, lets chat a bit. Don't you find the scaling too annoying?",
             cost: new Decimal(150),
         },
+        22: {
+            description: "Well now lets skyrocket points!",
+            cost: new Decimal(250),
+        },
+        23: {
+            description: "Now you can finnaly get past the scaling, nice?",
+            cost: new Decimal(500),
+        },
         
     },
     gainMult() {                            // Returns your multiplier to your gain of the prestige resource.

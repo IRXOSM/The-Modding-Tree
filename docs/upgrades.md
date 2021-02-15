@@ -9,8 +9,8 @@ Useful functions for dealing with Upgrades and implementing their effects:
 Hint: Basic point gain is calculated in [mod.js](/js/mod.js)'s "getPointGen" function.
 
 Upgrades are stored in the following format:
+```
 
-```js
 upgrades: {
     rows: # of rows,
     cols: # of columns,
