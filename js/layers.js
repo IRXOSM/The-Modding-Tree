@@ -78,6 +78,10 @@ addLayer("2P", {
             description: "Welcome to Prestige Prestige, or PP. Even more points because why not | +985",
             cost: new Decimal(1),
         },
+        12: {
+            description: "Points go brrrr | ^1.5",
+            cost: new Decimal(3),
+        },
         
     },
     gainMult() {                            // Returns your multiplier to your gain of the prestige resource.
