@@ -50,8 +50,12 @@ addLayer("P", {
     gainExp() {                             // Returns your exponent to your gain of the prestige resource.
         return new Decimal(1)
     },
+    passiveGeneration() {
+        if(hasUpgrade("2P",13)) return 2
+        return 0
+        },
 
-    layerShown() { return true }            // Returns a bool for if this layer's node should be visible in the tree.
+    layerShown() { return true }           // Returns a bool for if this layer's node should be visible in the tree.
 })
 addLayer("2P", {
     startData() { return {                  // startData is a function that returns default data for a layer. 
@@ -81,6 +85,10 @@ addLayer("2P", {
         12: {
             description: "Points go brrrr | ^1.5",
             cost: new Decimal(3),
+        },
+        13: {
+            description: "Passive Prestige point generation, because why not?!",
+            cost: new Decimal(10),
         },
         
     },

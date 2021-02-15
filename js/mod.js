@@ -1,3 +1,4 @@
+
 let modInfo = {
 	name: "The Tree Tree",
 	id: "IRXOSMMOD1",
@@ -53,6 +54,15 @@ function getPointGen() {
 	return gain
 }
 
+if(hasUpgrade("2P", 13)) {
+	buyUpgrade("P", 11)
+	buyUpgrade("P", 12)
+	buyUpgrade("P", 13)
+	buyUpgrade("P", 21)
+	buyUpgrade("P", 22)
+	buyUpgrade("P", 23)
+}
+
 // You can add non-layer related variables that should to into "player" and be saved here, along with default values
 function addedPlayerData() { return {
 }}
@@ -63,7 +73,7 @@ var displayThings = [
 
 // Determines when the game "ends"
 function isEndgame() {
-	return player.points.gte(new Decimal("e280000000"))
+	return player.points.gte(new Decimal("ee308"))
 }
 
 
@@ -72,7 +82,7 @@ function isEndgame() {
 
 // You can change this if you have things that can be messed up by long tick lengths
 function maxTickLength() {
-	return(3600) // Default is 1 hour which is just arbitrarily large
+	return(86400) // Default is 1 hour which is just arbitrarily large
 }
 
 // Use this if you need to undo inflation from an older version. If the version is older than the version that fixed the issue,
