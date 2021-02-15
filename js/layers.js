@@ -22,6 +22,19 @@ addLayer("p", {
             description: "Increases point gain",
             cost: new Decimal(10),
         },
+        12: {
+            description: "Doubles point gain",
+            cost: new Decimal(35),
+        },
+        13: {
+            description: "Even more points, who doesn't like that !?",
+            cost: new Decimal(100),
+        },
+        21: {
+            description: "While I give you upgrades, lets chat a bit. Don't you find the scaling too annoying?",
+            cost: new Decimal(150),
+        },
+        
     },
     gainMult() {                            // Returns your multiplier to your gain of the prestige resource.
         return new Decimal(1)               // Factor in any bonuses multiplying gain here.
